@@ -1,0 +1,83 @@
+<?xml version ="1.0" encoding ="utf -8"?>
+    <LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+        xmlns:tools ="http://schemas.android.com/tools "
+        android:layout_width ="match_parent"
+        android:layout_height ="match_parent"
+        android:orientation ="vertical"
+        android:padding ="16dp"
+        tools:context =". LeitorInteligenteActivity ">
+
+    <TextView
+    android:layout_width ="match_parent"
+    android:layout_height ="wrap_content"
+    android:text =" Leitor Inteligente de Texto "
+    android:textSize ="22sp"
+    android:textStyle ="bold"
+    android:gravity ="center"
+    android:layout_marginBottom ="16dp"/>
+
+    <Button
+    android:id ="@+id/btnCapturarTexto"
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:text =" Capturar Imagem para Texto"
+    android:layout_gravity ="center_horizontal"
+    android:layout_marginBottom ="16dp"/>
+
+    <ImageView
+    android:id="@+id/imageViewCapturada"
+    android:layout_width ="match_parent"
+    android:layout_height ="200dp"
+
+    android:scaleType ="fitCenter"
+    android:background ="#EEE"
+    android:layout_marginBottom ="16dp"
+    tools:srcCompat =" @drawable / ic_launcher_background "/>
+    <TextView
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:text =" Texto Reconhecido: "
+    android:textStyle ="bold"
+    android:layout_marginBottom ="8dp"/>
+
+    <ScrollView
+    android:layout_width ="match_parent"
+    android:layout_height ="0dp"
+    android:layout_weight ="1"
+    android:layout_marginBottom ="16dp">
+    <TextView
+    android:id ="@+id/tvTextoReconhecido"
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:text =" Nenhum texto reconhecido ainda ."
+    android:textSize ="16sp"
+    android:textColor =" @android:color / black "/>
+    </ScrollView>
+
+    <LinearLayout
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:orientation ="horizontal"
+    android:gravity ="center_horizontal">
+    <Button
+    android:id ="@+id/btnFalar"
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:text =" Falar "
+    android:enabled ="false"
+    android:layout_marginEnd ="8dp"/>
+    <Button
+    android:id ="@+id/btnPausar"
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:text =" Pausar "
+    android:enabled ="false"
+    android:layout_marginEnd ="8dp"/>
+    <Button
+    android:id ="@+id/btnRepetir"
+    android:layout_width ="wrap_content"
+    android:layout_height ="wrap_content"
+    android:text =" Repetir "
+    android:enabled ="false"/>
+    </ LinearLayout >
+</ LinearLayout >
